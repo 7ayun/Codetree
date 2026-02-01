@@ -1,4 +1,4 @@
-text = input()
+text = input().upper()
 
 if text == 'S':
     print('Superior')
