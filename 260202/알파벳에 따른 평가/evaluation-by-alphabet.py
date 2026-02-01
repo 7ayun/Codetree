@@ -1,9 +1,9 @@
-text = input().upper()
+text = input()
 
 if text == 'S':
     print('Superior')
 elif text == 'A':
-    print('Excllent')
+    print('Excellent')
 elif text == 'B':
     print('Good')
 elif text == 'C':
