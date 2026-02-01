@@ -5,6 +5,6 @@ if N >= 3000:
 elif N >= 1000:
     print('mask')
 elif N >= 500:
-    print('Pen')
+    print('pen')
 else:
     print('no')
