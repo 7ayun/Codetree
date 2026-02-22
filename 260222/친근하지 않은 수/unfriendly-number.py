@@ -1,0 +1,12 @@
+N = int(input())
+
+count = 0
+
+for i in range(1, N + 1):
+    if i % 2 == 0: continue
+    if i % 3 == 0: continue
+    if i % 5 == 0: continue
+    else:
+        count += 1
+
+print(count)
