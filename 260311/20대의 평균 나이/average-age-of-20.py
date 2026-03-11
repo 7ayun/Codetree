@@ -1,12 +1,27 @@
-age_avg = 0
-count = 0
+sum = 0
+cnt = 0
 
 while True:
-    age = int(input())
+    
+    try:
+        age = int(input())
 
-    if age > 29:
-        print(f"{age_avg / count:.2f}")
+        if not 20 <= age <= 29:
+            if cnt > 0:
+                print(f"{sum / cnt:.2f}")
+            
+            else:
+                print(0.00)
+            
+            break
+            
+        sum += age
+        cnt += 1
+
+    except EOFError:
+        if cnt > 0:
+            print(f"{sum / cnt:.2f}")
         break
 
-    age_avg += age
-    count += 1
+    except ValueError:
+        break
