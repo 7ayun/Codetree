@@ -14,6 +14,6 @@ for i in range(n - 1):
     for _ in range(i + 1):
         print(" ", end = "")
     
-    for _ in range(n - (i * 2)):
+    for _ in range((n * 2) - 3 - (i * 2)):
         print("*", end = "")
     print()
