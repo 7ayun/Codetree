@@ -12,4 +12,4 @@ for num in nums:
 
 avg = (total / cnt)
 
-print(total, avg)
+print(f"{total} {avg:.1f}")
