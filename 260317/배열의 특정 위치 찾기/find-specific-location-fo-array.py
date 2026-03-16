@@ -1,18 +1,19 @@
 nums = list(map(int, input().split()))
 
-first_total = 0
-second_total = 0
-second_cnt = 0
+even_sum = 0
+triple_sum = 0
+triple_cnt = 0
 
-for idx in range(1, len(nums) + 1):
-    if idx % 2 != 0:
-        first_total += nums[idx]
+for i, val in enumerate(nums):
+    order = i + 1
 
-for num in nums:
-    if num % 3 == 0:
-        second_total += num
-        second_cnt += 1
+    if order % 2 == 0:
+        even_sum += val
 
-second_avg = second_total / second_cnt
+    if order % 3 == 0:
+        triple_sum += val
+        triple_cnt += 1
 
-print(f"{first_total} {second_avg:.1f}")
+triple_avg = triple_sum / triple_cnt
+
+print(f"{even_sum} {triple_avg:.1f}")
