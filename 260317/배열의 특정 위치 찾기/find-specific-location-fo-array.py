@@ -4,7 +4,7 @@ first_total = 0
 second_total = 0
 second_cnt = 0
 
-for idx in range(len(nums)):
+for idx in range(1, len(nums) + 1):
     if idx % 2 != 0:
         first_total += nums[idx]
 
